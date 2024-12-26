@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Veganize",
+  "description": "Replaces the word 'milk' with 'vegan milk alternative' on web pages",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
